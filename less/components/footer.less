@@ -4,6 +4,7 @@
     padding-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -727px;
     
     &:after {
         content: '\A';
@@ -56,7 +57,7 @@
     }
     &__policy {
         padding-top: 30px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid #DD9D3C;
     }
     &__policy-inner {
         display: flex;
@@ -64,10 +65,10 @@
         align-items: center;
     }
     &__policy-left {
-        .training-text(rgba(255, 255, 255, 0.5));
+        // .training-text(rgba(255, 255, 255, 0.5));
     }
     &__link {
-        .training-text(rgba(255, 255, 255, 0.5));
+        // .training-text(rgba(255, 255, 255, 0.5));
         text-decoration: underline;
     }
 }
@@ -116,5 +117,11 @@
         &__text {
             width: 250px;
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer { 
+        background-position-x: -483px;
     }
 }
